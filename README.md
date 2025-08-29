@@ -52,7 +52,7 @@
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/highway-delite.git
+git clone https://github.com/surjeetkumar8006/Highway-Delite.git
 cd highway-delite
 2️⃣ Backend Setup
 bash
