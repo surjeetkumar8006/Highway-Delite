@@ -1,121 +1,127 @@
-# 🛣️ Highway Delite – Notes App with OTP & Google Authentication
+#  Highway Delite – Secure Notes App
 
-Highway Delite is a full-stack, mobile-friendly note-taking app that allows users to securely sign up or log in using **Email OTP** or **Google OAuth**. Authenticated users can create and manage personal notes. All protected actions are secured using **JWT authentication**.
+**Highway Delite** is a modern, full-stack note-taking application that lets users securely **sign up or log in using Email OTP or Google OAuth**. Authenticated users can create, view, and manage their personal notes. The app ensures **security with JWT-based authentication** and provides a smooth, responsive UI.
 
 ---
 
-## ✨ Features
+##  Key Features
 
-- ✅ Sign up/Login via **Email OTP**
-- ✅ One-click Google Login via **OAuth**
-- ✅ Protected Routes using **JWT tokens**
-- ✅ Create and Delete personal Notes
-- ✅ View authenticated user profile (name & email)
-- ✅ Beautiful UI using **ShadCN** & **TailwindCSS**
-- ✅ Toast notifications for real-time feedback
-- ✅ Fully responsive on all devices
+- 🔐 **Authentication**
+  - Email OTP login/sign-up  
+  - Google OAuth for one-click login  
+- 📝 **Notes Management**
+  - Create, view, and delete personal notes  
+  - Notes are user-specific and secure  
+- 👤 **User Profile**
+  - View authenticated user’s name & email  
+- 💻 **Frontend**
+  - Beautiful, responsive design using **ShadCN** & **TailwindCSS**  
+- ⚡ **UX**
+  - Real-time **toast notifications** for actions  
+  - Fully mobile-friendly  
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer         | Tech Used                                |
-|---------------|-------------------------------------------|
-| Frontend      | React (TypeScript), Vite, ShadCN, TailwindCSS |
-| Backend       | Node.js, Express (TypeScript)             |
-| Auth          | SendGrid (Email OTP), Google OAuth        |
-| Database      | MongoDB with Mongoose                     |
-| Token System  | JSON Web Tokens (JWT)                     |
-| Deployment    | Vercel (Frontend), Render (Backend)       |
+| Layer        | Technology Used                                |
+|-------------|-----------------------------------------------|
+| Frontend     | React (TypeScript), Vite, ShadCN, TailwindCSS |
+| Backend      | Node.js, Express (TypeScript)                 |
+| Authentication | SendGrid (Email OTP), Google OAuth          |
+| Database     | MongoDB (Mongoose)                            |
+| Security     | JWT Tokens                                    |
+| Deployment   | Vercel (Frontend), Render (Backend)           |
 
 ---
 
 ## 📦 Installation & Setup
 
-### 1. Clone the Repository
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/highway-delite.git
 cd highway-delite
-```
----
-### 2. Backend Setup
-```bash
+2️⃣ Backend Setup
+bash
+Copy code
 cd server
 npm install
-```
-## Create a .env file in the server folder:
-```bash
+Create a .env file in the server folder:
+
+env
+Copy code
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 SENDGRID_API_KEY=your_sendgrid_api_key
 GOOGLE_CLIENT_ID=your_google_client_id
-```
+Start the backend server:
 
-## Run the server
-```bash
+bash
+Copy code
 npm run dev
-```
----
-### 3. Frontend Setup
-```bash
+3️⃣ Frontend Setup
+bash
+Copy code
 cd ../client
 npm install
-```
+Create a .env file in the client folder:
 
-## Create a .env file in the client folder:
-```bash
+env
+Copy code
 VITE_API_BASE_URL=http://localhost:5000/api
 VITE_GOOGLE_CLIENT_ID=your_google_client_id
-```
+Start the frontend:
 
-## Start The Frontend
-```bash
+bash
+Copy code
 npm run dev
-```
----
-### 🚀 Deployment
+🚀 Deployment
+Frontend – Vercel
+Connect your GitHub repository
 
-  <h3>Frontend (Vercel)</h3>
-  <ul>
-    <li>Connect your repo</li>
-    <li>Set environment variables:
-      <ul>
-        <li><code>VITE_API_BASE_URL</code></li>
-        <li><code>VITE_GOOGLE_CLIENT_ID</code></li>
-      </ul>
-    </li>
-  </ul>
+Set environment variables:
 
-  <h3>Backend (Render)</h3>
-  <ul>
-    <li>Add environment variables:
-      <ul>
-        <li><code>MONGO_URI</code></li>
-        <li><code>JWT_SECRET</code></li>
-        <li><code>SENDGRID_API_KEY</code></li>
-        <li><code>GOOGLE_CLIENT_ID</code></li>
-      </ul>
-    </li>
-  </ul>
+VITE_API_BASE_URL
 
-  <hr/>
+VITE_GOOGLE_CLIENT_ID
 
-### 📂 Folder Structure
-  <pre><code>highway-delite/
+Backend – Render
+Add environment variables:
+
+MONGO_URI
+
+JWT_SECRET
+
+SENDGRID_API_KEY
+
+GOOGLE_CLIENT_ID
+
+📂 Folder Structure
+plaintext
+Copy code
+highway-delite/
 │
 ├── client/              # React Frontend
 │   └── src/
-│       ├── pages/
-│       ├── components/
-│       ├── lib/
+│       ├── pages/       # Page Components
+│       ├── components/  # Reusable Components
+│       └── lib/         # Helper Functions
 │
 ├── server/              # Node.js Backend
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── utils/
-│   └── middlewares/
+│   ├── controllers/     # Route Handlers
+│   ├── models/          # Mongoose Models
+│   ├── routes/          # API Routes
+│   ├── middlewares/     # Middleware Functions
+│   └── utils/           # Utility Functions
 │
-└── README.md</code></pre>
+└── README.md
+📌 Highlights
+Full TypeScript support on both frontend and backend
+
+JWT-protected routes for security
+
+Easy to customize and extend
+
+Optimized for mobile and desktop
