@@ -34,6 +34,18 @@
 | Deployment   | Vercel (Frontend), Render (Backend)           |
 
 ---
+<img width="1023" height="707" alt="image" src="https://github.com/user-attachments/assets/e214cd12-7b9d-4721-90f9-78b055219ae4" />
+
+<img width="1647" height="841" alt="image" src="https://github.com/user-attachments/assets/6efe13cd-fb73-4c0b-a4ee-d08b788df224" />
+<img width="1552" height="858" alt="image" src="https://github.com/user-attachments/assets/b634a28b-5b98-439b-a6ff-e98b14d6deef" />
+<img width="1531" height="796" alt="image" src="https://github.com/user-attachments/assets/bb544a09-fbfd-4e23-a6a5-6c917205592f" />
+<img width="1562" height="856" alt="image" src="https://github.com/user-attachments/assets/d570fde5-9430-4b8d-a776-6f92a9724e63" />
+
+
+
+
+
+
 
 ## 📦 Installation & Setup
 
